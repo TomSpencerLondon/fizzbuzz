@@ -1,13 +1,14 @@
 <html>
   <head>
     <title>FizzBuzz</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
   </head>
   <body>
     <h1>FizzBuzz</h1>
     <p>Enter a number to FizzBuzz it</p>
-    <form action='/fizz' method='post'>
+    <form action='/fizz'>
       <input type='text' name='guess' />
-      <input type='submit' value='FizzBuzz!' />
+      <input id='button' type='submit' value='FizzBuzz!' />
     </form>
     <p>
       <%= @result %>
